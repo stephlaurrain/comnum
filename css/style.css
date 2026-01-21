@@ -1,8 +1,9 @@
 :root {
     --main-title-color: #fcd600;
-    --bg-logo-color: #695e1b;
+    --logo-bg-color: #695e1b;
     --main-bg-color: #333;
-    --filter-bg-color: #DEEBFF;
+    --second-shadow-color: #b3b01f;
+    --filter-shadow-color: #DEEBFF;
 }
 
 * {
@@ -40,7 +41,9 @@ h1 {
 }
 
 .title {
+    padding: 10px;
     font-size: clamp(0.5rem, 2vw + 1rem, 4rem);
+    text-shadow: 0 0 5px var(--second-shadow-color), 0 0 15px var(--second-shadow-color);
 }
 
 header {
@@ -75,7 +78,7 @@ main {
 }
 
 .logo img {
-    filter: drop-shadow(0 0 5px var(--bg-logo-color));
+    filter: drop-shadow(0 0 5px var(--logo-bg-color));
     animation: pulse 2s infinite;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
