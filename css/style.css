@@ -1,0 +1,92 @@
+:root {
+    --main-title-color: #fcd600;
+    --bg-logo-color: #695e1b;
+    --main-bg-color: #333;
+    --filter-bg-color: #DEEBFF;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 340px;
+    margin: 0 auto;
+    background-image: url('../assets/images/bg.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-bg-color);
+
+    min-height: 100dvh;         
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: var(--main-title-color);
+    letter-spacing: 2px;
+}
+
+.title {
+    font-size: clamp(0.5rem, 2vw + 1rem, 4rem);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo img {
+    filter: drop-shadow(0 0 5px var(--bg-logo-color));
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-container {
+    color: var(--main-title-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 767.98px) {}
