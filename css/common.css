@@ -75,8 +75,7 @@ nav ul {
 nav li {
 	padding: 10px 0px;
     width: 80px;
-	font-size: 1.2em;
-    margin-top:-3px;
+	font-size: 1.2em;    
     cursor: pointer;
     display: flex;
 	justify-content: center;
